@@ -76,6 +76,7 @@ tooltip label {
 #clock,
 #cpu,
 #memory,
+#bluetooth,
 #custom_notification {
   background-color: @bg0;
   padding: 0 10px;
@@ -98,20 +99,17 @@ tooltip label {
   color: @blue;
 }
 
+#bluetooth {
+  color: @blue;
+  font-size: 18px;
+}
+
 #custom_notification {
   color: @fg;
 }
 
 #pulseaudio {
   color: @yellow;
-}
-
-#network {
-  color: @purple;
-}
-
-#battery {
-  color: @green;
 }
 
 #network {
