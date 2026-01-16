@@ -7,9 +7,9 @@
   "modules-center": ["tray"],
   "modules-right": [
     "pulseaudio",
-    "network",
+    "network"
     // "battery"
-    "custom/notification"
+    // "custom/notification"
   ],
   "clock": {
     "interval": 60,
