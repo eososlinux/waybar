@@ -13,6 +13,7 @@
   ],
   "modules-right": [
     "network",
+    "bluetooth",
     "pulseaudio",
     "cpu",
     "memory"
@@ -39,6 +40,13 @@
     "format-alt": "{:L%d %B W%V %Y}",
     "interval": 60,
     "max-length": 25
+  },
+  "bluetooth": {
+    "format": "",
+    "format-off": "󰂲",
+    "format-disabled": "󰂲",
+    "format-connected": "󰂱",
+    "format-no-controller": "",
   },
   "hyprland/workspaces": {
 	"format": "{name}",
