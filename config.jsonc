@@ -18,7 +18,7 @@
     "bluetooth",
     "pulseaudio",
     "cpu",
-    "memory",
+    // "memory",
     "battery"
     // "custom/notification"
   ],
