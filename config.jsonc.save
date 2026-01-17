@@ -2,18 +2,13 @@
   "position": "top",
   // "width": 100,
   "margin-top": 12,
+
   "modules-left": [
     // "clock",
-    "hyprland/workspaces"
+    "hyprland/workspaces",
   ],
-  "modules-center": [
-    "tray",
-    "clock",
-    "custom/update",
-    "custom/screenrecording-indicator",
-  ],
+  "modules-center": ["tray", "clock"],
   "modules-right": [
-    "group/tray-expander",
     "network",
     "bluetooth",
     "pulseaudio",
@@ -22,14 +17,6 @@
     "battery"
     // "custom/notification"
   ],
-  "custom/update": {
-    "format": "",
-    "exec": "omarchy-update-available",
-    "on-click": "omarchy-launch-floating-terminal-with-presentation omarchy-update",
-    "tooltip-format": "Omarchy update available",
-    "signal": 7,
-    "interval": 21600,
-  },
   "cpu": {
     "interval": 5,
     "format": "󰍛 {usage}%",
@@ -45,7 +32,6 @@
     "max-length": 10,
   },
   "clock": {
-    "timezone": "America/Argentina/Buenos_Aires",
     "format": "{:L%A %H:%M}",
     "format-alt": "{:L%d %B W%V %Y}",
     "interval": 60,
@@ -57,8 +43,6 @@
     "format-disabled": "󰂲",
     "format-connected": "󰂱",
     "format-no-controller": "",
-    "tooltip-format": "Devices connected: {num_connections}",
-    "on-click": "omarchy-launch-bluetooth",
   },
   "hyprland/workspaces": {
     "format": "{name}",
@@ -86,12 +70,6 @@
     "icon-size": 21,
     "spacing": 10,
   },
-  "custom/screenrecording-indicator": {
-    "on-click": "omarchy-cmd-screenrecord",
-    "exec": "$OMARCHY_PATH/default/waybar/indicators/screen-recording.sh",
-    "signal": 8,
-    "return-type": "json",
-  },
   "pulseaudio": {
     "format": "{volume}% {icon}",
     "format-bluetooth": "{volume}% {icon}",
@@ -104,40 +82,14 @@
       "phone-muted": "",
       "portable": "",
       "car": "",
-      "default": [
-        "",
-        ""
-      ],
+      "default": ["", ""],
     },
     "scroll-step": 1,
     "on-click": "pavucontrol",
-    "ignored-sinks": [
-      "Easy Effects Sink"
-    ],
-  },
-  "group/tray-expander": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 600,
-      "children-class": "tray-group-item",
-    },
-    "modules": [
-      "custom/expand-icon",
-      "tray"
-    ],
-  },
-  "custom/expand-icon": {
-    "format": "",
-    "tooltip": false,
+    "ignored-sinks": ["Easy Effects Sink"],
   },
   "network": {
-    "format-icons": [
-      "󰤯",
-      "󰤟",
-      "󰤢",
-      "󰤥",
-      "󰤨"
-    ],
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
     "format": "{icon}",
     "format-wifi": "{icon}",
     "format-ethernet": "󰀂",
@@ -147,7 +99,6 @@
     "tooltip-format-disconnected": "Disconnected",
     "interval": 3,
     "spacing": 1,
-    "on-click": "omarchy-launch-wifi",
   },
   "battery": {
     "states": {
