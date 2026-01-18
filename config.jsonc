@@ -93,22 +93,20 @@
     "return-type": "json",
   },
   "pulseaudio": {
-    "format": "{volume}% {icon}",
-    "format-bluetooth": "{volume}% {icon}",
-    "format-muted": "",
+    "format": "{icon} {volume}% {volume}%",
+    "on-click": "omarchy-launch-audio",
+    "on-click-right": "pamixer -t",
+    "tooltip-format": "Playing at {volume}%",
+    "scroll-step": 5,
+    "format-muted": "",
     "format-icons": {
       "headphone": "",
-      "hands-free": "",
-      "headset": "",
-      "phone": "",
-      "phone-muted": "",
-      "portable": "",
-      "car": "",
-      "default": ["", ""],
+      "default": [
+        "",
+        "",
+        ""
+      ],
     },
-    "scroll-step": 1,
-    "on-click": "pavucontrol",
-    "ignored-sinks": ["Easy Effects Sink"],
   },
   "group/tray-expander": {
     "orientation": "inherit",
@@ -116,14 +114,23 @@
       "transition-duration": 600,
       "children-class": "tray-group-item",
     },
-    "modules": ["custom/expand-icon", "tray"],
+    "modules": [
+      "custom/expand-icon",
+      "tray"
+    ],
   },
   "custom/expand-icon": {
     "format": "",
     "tooltip": false,
   },
   "network": {
-    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "format-icons": [
+      "󰤯",
+      "󰤟",
+      "󰤢",
+      "󰤥",
+      "󰤨"
+    ],
     "format": "{icon}",
     "format-wifi": "{icon}",
     "format-ethernet": "󰀂",
