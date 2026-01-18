@@ -93,7 +93,7 @@
     "return-type": "json",
   },
   "pulseaudio": {
-    "format": "{icon} {volume}% {volume}%",
+    "format": "{icon} {volume}%",
     "on-click": "omarchy-launch-audio",
     "on-click-right": "pamixer -t",
     "tooltip-format": "Playing at {volume}%",
@@ -101,11 +101,7 @@
     "format-muted": "",
     "format-icons": {
       "headphone": "",
-      "default": [
-        "",
-        "",
-        ""
-      ],
+      "default": ["", "", ""],
     },
   },
   "group/tray-expander": {
@@ -114,23 +110,14 @@
       "transition-duration": 600,
       "children-class": "tray-group-item",
     },
-    "modules": [
-      "custom/expand-icon",
-      "tray"
-    ],
+    "modules": ["custom/expand-icon", "tray"],
   },
   "custom/expand-icon": {
     "format": "",
     "tooltip": false,
   },
   "network": {
-    "format-icons": [
-      "󰤯",
-      "󰤟",
-      "󰤢",
-      "󰤥",
-      "󰤨"
-    ],
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
     "format": "{icon}",
     "format-wifi": "{icon}",
     "format-ethernet": "󰀂",
