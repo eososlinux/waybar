@@ -50,6 +50,7 @@
     "format-alt": "{:L%d %B W%V %Y}",
     "interval": 60,
     "max-length": 25,
+    "tooltip": true,
   },
   "bluetooth": {
     "format": "",
